@@ -17,6 +17,7 @@ h1 {
 }
 p {
     letter-spacing: 0.05em;
+    margin: 1em 0;
 }
 /* GLOBAL STYLES */
 .hamburger {
@@ -154,10 +155,18 @@ nav {
     object-fit: cover;
 }
 #grid_container_omoss h2 {
+    font-size: 2em;
     margin: 10px 0;
 }
 #grid_container_omoss section {
-    margin: 20px 10px;
+    margin: 20px 50px 20px 10px;
+}
+.divider {
+    grid-area: dv;
+    display: block;
+    width: 90%;
+    margin: auto;
+    display: none;
 }
 
 /* FRAGOR.html */
@@ -344,27 +353,43 @@ nav {
     }
 
     #grid_container_omoss {
-        grid-template-columns: 1fr minmax(900px, 5fr) 1fr;
-        grid-template-rows: 50px minmax(300px, auto) minmax(300px, auto);  
+        grid-template-columns: 1fr minmax(900px, 1200px) 1fr;
+        grid-template-rows: 50px minmax(300px, auto) 2px minmax(300px, auto);  
         grid-template-areas:
         "nv nv nv"
         ".  a1 . "
+        ".  dv . "
         ".  a2 . ";
         grid-gap: 50px;
     }
-    
-    #grid_container_omoss .article-1 {
+    .article-1 {
         flex-direction: row-reverse;
     }
+   .article-1 section {
+        margin: 20px 100px 20px 30px;
+    }
     
-    #grid_container_omoss .article-2 {
+    .article-2 {
         flex-direction: row;
     }
+    .article-2 section {
+        margin: 20px 30px 20px 100px;
+    }
+    
     #grid_container_omoss img {
-        height: 100%;
+        height: auto;
         width: 400px;
         max-width: 500px;
+        object-fit: cover;
     }
+    #grid_container_omoss article{
+        margin: 30px 0px;
+    }
+    .divider {
+        display: block;
+    }
+
+
 
     #grid_container_fragor {
         display: grid;
