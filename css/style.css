@@ -337,8 +337,8 @@ nav {
     }
     #grid_container_home {
         grid-template: 
-        "nv" 7%
-        "mn" 93%
+        "nv" 50px
+        "mn" auto
         / 100%;
         height: 100vh;
     }

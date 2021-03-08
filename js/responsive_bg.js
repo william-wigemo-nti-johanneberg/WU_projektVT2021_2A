@@ -7,4 +7,6 @@ function bgChanger(){
     }
 }
 
+bgChanger()
+
 window.onresize = bgChanger
