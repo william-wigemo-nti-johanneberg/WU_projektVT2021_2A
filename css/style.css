@@ -158,8 +158,8 @@ nav {
     font-size: 2em;
     margin: 10px 0;
 }
-#grid_container_omoss section {
-    margin: 20px 50px 20px 10px;
+.article-1 section, .article-2 section {
+    margin: 20px;
 }
 .divider {
     grid-area: dv;
@@ -382,14 +382,14 @@ nav {
         flex-direction: row-reverse;
     }
    .article-1 section {
-        margin: 20px 100px 20px 30px;
+        margin: 20px 50px 20px 30px;
     }
     
     .article-2 {
         flex-direction: row;
     }
     .article-2 section {
-        margin: 20px 30px 20px 100px;
+        margin: 20px 30px 20px 50px;
     }
     
     #grid_container_omoss img {
