@@ -184,32 +184,30 @@ nav {
 
 #grid_container_fragor_inside {
     grid-area: s1;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
-    grid-template: 
-    "c1 c2"
-    "c1 c2";
-    grid-gap: 10px;
-    margin: 10px;
-    color: white;
-}
-#grid_container_fragor_inside .col-1, #grid_container_fragor_inside .col-2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
     grid-gap: 10px;
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
 }
-#grid_container_fragor_inside .col-1 {
-    grid: c1;
-}
-#grid_container_fragor_inside .col-2 {
-    grid: c2;
-}
-.col-1 article, .col-2 article {
-    background-color: green;
-    padding: 15px;
+#grid_container_fragor_inside article {
+    background-color: rgb(243, 243, 243);
+    padding: 20px;
+    margin: 10px;
     border-radius: 3px;
-    box-shadow: rgb(77, 83, 77) 1px 1px 6px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: rgb(77, 83, 77) 1px 1px 8px 0px;
+}
+#grid_container_fragor_inside article:nth-child(2n) h2 {
+    color: rgb(134, 60, 60);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#grid_container_fragor_inside article:nth-child(2n+1) h2 {
+    color: rgb(45, 92, 131);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #fragor_titel {
     background-image: url('../img/moose-3.jpg');
@@ -319,6 +317,8 @@ nav {
 }
 
 @media screen and (min-width: 700px){
+
+    /* NAV */
     .navlinks {
         left: 0;
         flex-direction: row;
@@ -352,6 +352,8 @@ nav {
         height: 100vh;
     }
 
+
+    /* OM OSS */
     #grid_container_omoss {
         grid-template-columns: 1fr minmax(900px, 1200px) 1fr;
         grid-template-rows: 50px minmax(300px, auto) 2px minmax(300px, auto);  
@@ -389,8 +391,7 @@ nav {
         display: block;
     }
 
-
-
+    /* FRÅGOR */
     #grid_container_fragor {
         display: grid;
         grid-template:
@@ -399,6 +400,46 @@ nav {
         ".  s1 . " auto
         / 1fr minmax(800px, 5fr) 1fr;
     }
+
+    #grid_container_fragor_inside article:nth-child(1){
+        grid-area: a1;
+    }
+    #grid_container_fragor_inside article:nth-child(2){
+        grid-area: a2;
+    }
+    #grid_container_fragor_inside article:nth-child(3){
+        grid-area: a3;
+    }
+    #grid_container_fragor_inside article:nth-child(4){
+        grid-area: a4;
+    }
+    #grid_container_fragor_inside article:nth-child(5){
+        grid-area: a5;
+    }
+    #grid_container_fragor_inside article:nth-child(6){
+        grid-area: a6;
+    }
+    #grid_container_fragor_inside article:nth-child(7){
+        grid-area: a7;
+    }
+
+
+
+    #grid_container_fragor_inside {
+        display: grid;
+        grid-template:
+        "a1 a2 a2 a4 a4" 250px
+        "a1 a2 a2 a6 a7" 100px
+        "a3 a3 a5 a6 a7" 300px
+        / 2fr 1fr 2fr 2fr 2fr;
+        grid-gap: 30px;
+    }
+    #grid_container_fragor_inside article {
+        margin: 0;
+    }
+
+
+    /* WEBBSHOP */
     #grid_container_webbshop {
         grid-template:
         "nv nv nv" 50px
@@ -411,6 +452,8 @@ nav {
         grid-template-columns: repeat(4, 180px);
         grid-auto-rows: 180px;
     }
+
+    /* BLI MEDLEM */
     #grid_container_blimedlem{
         grid-template:
         "nv nv nv" 50px
