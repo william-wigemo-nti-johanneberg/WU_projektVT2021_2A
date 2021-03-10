@@ -223,6 +223,12 @@ nav {
     font-size: 3em;
     font-weight: 1200;
 }
+#fragor_titel h1 {
+    font-size: 1em;
+    background-color: white;
+    width: auto;
+    padding: 10px;
+}
 
 /* WEBBSHOP.HTML */
 
