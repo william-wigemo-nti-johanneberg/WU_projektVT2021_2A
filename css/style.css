@@ -282,6 +282,7 @@ nav {
 
 /* BLIMEDLEM.HTML */
 #grid_container_blimedlem{
+    height: 100%;
     display: grid;
     grid-template:
     "s1" 100%
@@ -289,6 +290,7 @@ nav {
     ;
 }
 #blimedlem_section {
+    filter: none;
     grid-area: s1;
     display: flex;
     flex-direction: column;
@@ -324,6 +326,18 @@ nav {
     margin: 10px auto;
     font-size: 2em;
     font-weight: 1000;
+}
+#blurry_bg {
+    background-image: url('../img/desktopbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
 }
 
 @media screen and (min-width: 700px){
@@ -446,9 +460,10 @@ nav {
 
     /* BLI MEDLEM */
     #grid_container_blimedlem{
+        height: 100vh;
         grid-template:
         "nv nv nv" 50px
-        " . s1 . " auto
+        " . s1 . " 400px
         / 1fr minmax(500px, 1fr) 1fr
         ;
     }
