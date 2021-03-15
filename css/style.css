@@ -304,7 +304,7 @@ nav {
     grid-area: s1;
     display: flex;
     flex-direction: column;
-    background-color: rgb(117, 146, 117);
+    background-color: rgb(0, 0, 0);
     padding-bottom: 50px;
     border-radius: 3px;
     margin: 100px 10px;
@@ -312,7 +312,9 @@ nav {
     box-shadow: rgb(77, 83, 77) 1px 2px 6px 1px;
 }
 #blimedlem_section h1 {
+    color: white;
     font-size: 2em;
+    margin: 50px 0px 20px 0px;
 }
 #blimedlem_section > form {
     display: flex;
@@ -324,21 +326,20 @@ nav {
     height: 30px;
     border-radius: 4px;
     padding: 0 10px;
-    border: 0;
+    border: 1px solid rgb(0, 0, 0);
 }
 #blimedlem_section > form > input:focus {
     outline: none;
 }
 #blimedlem_section > form > button {
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     border-radius: 4px;
-    margin: 10px auto;
-    font-size: 2em;
-    font-weight: 1000;
+    margin: 10px 0px;
+    font-size: 1.8em;
+    border: 1px solid rgb(0, 0, 0);
 }
 #blurry_bg {
-    background-image: url('../img/desktopbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(4px);
@@ -473,9 +474,12 @@ nav {
         height: 100vh;
         grid-template:
         "nv nv nv" 50px
-        " . s1 . " 400px
-        / 1fr minmax(500px, 1fr) 1fr
+        " . s1 . " 450px
+        / 2fr minmax(500px, 1fr) 2fr
         ;
+    }
+    #blurry_bg {
+        background-image: url('../img/desktopbg.jpg');
     }
 }
 
