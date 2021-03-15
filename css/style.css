@@ -514,6 +514,7 @@ nav {
         "a1 a2 a2 a4 a4" 250px
         "a1 a2 a2 a6 a7" 100px
         "a3 a3 a5 a6 a7" auto
+        ".  .  .  .  . " 200px
         / 2fr 1fr 2fr 2fr 2fr;
         grid-gap: 30px;
     }
