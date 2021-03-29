@@ -8,7 +8,6 @@
     font-weight: 600;
 }
 h1, h2, h3 {
-    font-style: bold;
     margin: 10px 0;
 }
 h1 {
@@ -222,7 +221,6 @@ nav {
     width: 100%;
     margin: 0;
     font-size: 3em;
-    font-weight: 1200;
 }
 #fragor_titel h1 {
     font-size: 1em;
