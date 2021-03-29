@@ -134,8 +134,8 @@ nav {
     grid-template-rows: auto;
     grid-template-columns: 100%;
     grid-template-areas:
-    "a2"
-    "a1";
+    "a1"
+    "a2";
 }
 .article-1 {
     grid-area: a1;
