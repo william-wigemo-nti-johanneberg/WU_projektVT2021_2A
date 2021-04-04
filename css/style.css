@@ -467,7 +467,7 @@ nav {
         "nv nv nv" 50px
         ".  hd . " auto
         ".  s1 . " auto
-        / 1fr minmax(200px, 2fr) 1fr;
+        / 1fr 800px 1fr;
     }
     #grid_container_webbshop .navlinks li:nth-child(4) {
         background: rgba(104, 85, 85, 0.336);
