@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +16,11 @@ h1 {
     text-align: center;
     margin: 20px;
 }
-p {
+p, li {
     letter-spacing: 0.05em;
     margin: 1em 0;
+    font-size: 12px;
+    font-family: 'Poppins';
 }
 .hamburger {
     position: fixed;
@@ -75,6 +78,7 @@ p {
     margin: 15px;
     display: flex;
     flex-direction: column;
+    font-size: 14px;
 }
 .navlinks a {
     text-decoration: none;
