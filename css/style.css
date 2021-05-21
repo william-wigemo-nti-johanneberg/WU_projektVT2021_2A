@@ -498,7 +498,7 @@ nav {
     }
     #grid_container_webbshop {
         grid-template: "nv nv nv nv" 50px
-                        ". .  hd . " auto
+                        ". hd  hd . " auto
                         ". sn fi ." auto
                         ". sn  s1 . " auto
                         /1fr 200px 800px 1fr;
@@ -533,7 +533,7 @@ nav {
         display: grid;
         grid-template: "nv nv nv nv" 50px
                         ". . . . " 50px
-                        " . s1 s1 . " auto
+                        ". s1 s1 ." auto
                         ". a1 a2 ." auto
                         ". . . . " 200px
                         /4fr minmax(285px, 1fr) minmax(285px, 1fr) 4fr;
