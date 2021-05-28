@@ -282,10 +282,6 @@ nav {
 #filter-area {
     grid-area: fi;
     margin: 0px 20px 25px 20px;
-    /* background-color: #f8f8f7;
-    border-radius: 4px;
-    padding: 15px;
-    box-shadow: rgb(153, 146, 146) 2px 2px 5px 0px; */
 }
 
 #filter-area::after {
@@ -362,7 +358,7 @@ nav {
 }
 
 #container_webbshop_inside>article {
-    height: 350px;
+    height: 340px;
     width: 350px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 1px 6px rgba(0, 0, 0, 0.23);
     border-radius: 2px;
